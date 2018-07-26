@@ -1,0 +1,20 @@
+name = Taxonomy field menu
+description = Provide menus based on taxonomy field to automatically connect terms and nodes.
+
+dependencies[] = taxonomy
+dependencies[] = menu
+dependencies[] = pathauto
+
+files[] = taxonomy_field_menu.test
+
+package = Taxonomy field menu
+
+core = 7.x
+configure = admin/structure/taxonomy_field_menu
+
+; Information added by Drupal.org packaging script on 2014-05-11
+version = "7.x-1.0"
+core = "7.x"
+project = "taxonomy_field_menu"
+datestamp = "1399772628"
+

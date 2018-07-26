@@ -1,0 +1,29 @@
+/*
+ Theme CSS: Site GBIF France
+ Last rev. : 17 Juillet
+ Css staïle for the imprimante
+ */
+
+body,#footer,.container{
+color:#000000;
+}
+
+.container{
+  width:100%;
+}
+
+#header,.menu-gauche,.navbar,.liste_outils,.back-to-top,.region-currentdate,#footer{
+display:none;
+}
+
+.container{
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow:none;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius:0;
+border:none;
+  
+}
+

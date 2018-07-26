@@ -1,0 +1,71 @@
+<!-- Debut Page Contenu (varie selon la page)-->
+<div class="frontpage">
+	<div class="block-breadcrumb"></div>
+
+	<!--<div class="row front-headline1">	<!-- modif du 11/06/2015 -->
+	<div class="front-headline1">	<!-- modif du 11/06/2015 -->
+		<div class="container">	<!-- ajout du 11/06/2015 -->
+
+			<!--Debut Block Actus -->
+			<div class="col-md-9">	<!-- modif du 10/06/2015 -->
+				<div class="heading">
+					<ul>
+						<li>
+							<div class="pull-right">
+								<a href="news.xml"><img src="<?php print base_path().path_to_theme();?>/img/rss16.png" /></a>
+							</div>
+						</li>
+						<li><h2><a href="actualites">Actualités</a></h2></li>
+					</ul>
+				</div>    
+				<?php print render($page['actualites']); ?>
+			</div>	<!-- fin colonne actu - modif du 10/06/2015 -->
+			<!-- Fin Block Actus -->
+
+			<!--Debut Block Agenda -->
+			<div class="col-md-3">	<!-- modif du 10/06/2015 -->
+				<div class="cadre">
+					<div class="heading">
+						<h2><a href="agenda">Agenda</a></h2>
+					</div>   
+					<?php print render($page['agenda']); ?>
+				</div>
+			</div>	<!-- fin colonne agenda - modif du 10/06/2015 -->
+			<!--Fin Block Agenda -->
+	
+
+			<!-- Debut Block Presentation -->
+			<!--<div class="row">	<!-- modif du 11/06/2015 -->
+			<div class="col-md-9">	<!-- modif du 10/06/2015 -->
+				<div class="block block-presentation">
+					<h2><a href="page/infos/presentation-du-gbif-france">Le GBIF France</a></h2>
+					<?php print render($page['content']); ?>
+					<div id="img-pres-gbif">
+						<a href="page/infos/les-missions-du-gbif-france"><img src="<?php print base_path() . path_to_theme(); ?>/img/leaf.png"/></a>
+					</div>
+				</div>
+			</div>	<!-- fin colonne present - modif du 10/06/2015 -->
+			<!-- Fin Block Presentation -->
+
+			<!-- Debut Block Acces Direct+Logo -->
+			<div class="col-md-3">	<!-- modif du 10/06/2015 -->
+				<div class="directaccess cadre">	
+					<h2>Accès direct</h2>
+					<?php print render($page['accesdirects']);?>
+				</div>
+			<!--</div>	<!-- modif du 10/06/2015 -->
+		  
+			<!--<div class="col-md-3">	<!-- modif du 10/06/2015 -->
+				<div class="gbifinternational">
+					<a href="http://www.gbif.org"  target="_blank" title="Accès au site du GBIF International"><img src="<?php print base_path() . path_to_theme(); ?>/img/logo-gbif.gif" id="logo-gbif"/></a>
+					<a href="http://www.mnhn.fr"  target="_blank" title="Accès au site du MNHN"><img src="<?php print base_path() . path_to_theme(); ?>/img/logo-mnhn.png" id="logo-mnhn" /></a> 
+					<!-- <a href="http://www.gbif.org"  target="_blank"><img src="<?php print base_path() . path_to_theme(); ?>/img/logo-gbif.jpg" /></a> -->            
+				</div>
+			</div>	<!-- fin colonne acces - modif du 10/06/2015 -->
+			<!--</div>	<!-- modif du 11/06/2015 -->
+			<!-- Fin Block Acces Direct+Logo -->
+
+		</div>	<!-- fin container - ajout du 11/06/2015 -->
+	</div>	<!-- fin front-headline1 -->
+</div>	<!-- fin frontpage -->
+<!--Fin Page Contenu (varie selon la page)-->

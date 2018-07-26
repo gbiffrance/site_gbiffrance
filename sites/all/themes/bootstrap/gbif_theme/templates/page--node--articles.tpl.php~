@@ -1,0 +1,26 @@
+<!-- Debut Modele Page Article -->
+<div class="currentdate">
+	<?php print render($page['currentdate']); ?>
+</div>
+<div class="block-breadcrumb">
+	<?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+</div>
+
+<!--<div class="row">	<!-- modif du 11/06/2015 -->
+	<div class="col-md-3">-->	<!-- modif du 10/06/2015 -->
+		<div class="menu-gauche">	
+			<?php print render($page['menu-gauche']); ?>
+		</div>
+	</div>	<!-- modif du 10/06/2015 -->
+
+    <div class="col-md-9">	<!-- modif du 10/06/2015 -->
+		<div class="text-container single-article">
+			<?php if (!empty($title)): ?>
+				<?php print "<h2 class='block-title'>" . render($title) . "</h2>";  ?>
+			<?php endif; ?>
+			<?php print render($page['content']); ?>
+			<div class="centered"><a href="/actualites">Retour aux actualités</a></div>
+		</div>
+	</div>	<!-- modif du 10/06/2015 -->
+<!--</div>	<!-- modif du 11/06/2015 -->
+<!-- Fin Modele Page Article -->

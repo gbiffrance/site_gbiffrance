@@ -1,0 +1,41 @@
+<!-- Debut Modele Pages de base -->
+<?php 
+	$display_menu_gauche = True;
+	/*$span_content = "span12";	*/
+	$span_content = "col-md-12";/* modif du 09/06/2015 */
+	$menu_gauche = '';
+
+	if (module_exists('search')){
+		if (arg(0) == 'search'){
+			$vars['title'] = t('Search Results');
+			$display_menu_gauche = False;
+		}
+	}
+
+	if ($display_menu_gauche){
+		
+		print '<div class="currentdate">' . render($page['currentdate']).'</div>';
+		print '<div class="block-breadcrumb"> ';
+		if (!empty($breadcrumb)){
+			print $breadcrumb;
+		}
+		print ' </div>';
+		/*$menu_gauche = '<div class="bloc">' . render($page['menu-gauche']) .  '</div>';*/
+		$menu_gauche = '<div class="col-md-3"><div class="bloc">' . render($page['menu-gauche']) .  '</div></div>';	/* modif du 10/06/2015 */
+		/*$span_content = "span8";*/
+		$span_content = "col-md-3";/* modif du 10/06/2015 */
+	}
+?>
+<!-- Debut Menu de Gauche -->
+<div class="row">
+	<?php print $menu_gauche; ?>
+	<div class="<?php print 'bloc text-container ' . $span_content ?>">
+		<div class="<?php print 'bloc text-container ' ?>">
+		<?php if (!empty($title)): ?>
+			<?php print "<h2 class='block-title'>" . render($title) . "</h2>";  ?>
+		<?php endif; ?>
+		<?php print render($page['content']); ?>
+	</div>
+</div>
+<!-- Fin Menu de Gauche -->
+<!-- Fin Modele Pages de base -->

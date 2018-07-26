@@ -1,0 +1,33 @@
+<div id="node-<?php print $node->nid; ?>" class="bloc <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+  <div>
+    <?php print render($title_prefix); ?>
+    <?php if (!$page && $title): ?>
+      <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+    <?php endif; ?>
+    <?php print render($title_suffix); ?>
+
+    
+    <?php if ($submitted) {  echo '<span class="article-post-date">' . date( "d/m/Y",$node->created)."</span>";  } ?>
+    
+    
+  </div>
+
+  <?php
+    // Hide comments, tags, and links now so that we can render them later.
+    hide($content['comments']);
+    hide($content['links']);
+    hide($content['field_tags']);
+    print render($content);
+   // print format_date($node->created, 'article'); 
+  ?>
+
+  <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
+    <div>
+      <?php print render($content['field_tags']); ?>
+      <?php print render($content['links']); ?>
+    </div>
+  <?php endif; ?>
+
+  <?php print render($content['comments']); ?>
+
+</div> <!-- /.node -->

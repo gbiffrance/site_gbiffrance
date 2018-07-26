@@ -1,0 +1,2052 @@
+body{
+	font-family: 'Open Sans', sans-serif; 
+	/*font-size:100%;	/*	modif du 12/06/2015	*/
+	/*line-height:20px;*/
+	line-height:1.428;
+	background-color:#F2F2F2;
+}
+
+/* Debut Menu */
+
+.navbar-header .nav li{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.navbar-header .nav>.active>a,
+.navbar-header .nav>.active>a:hover,
+.navbar-header .nav>.active>a:focus{
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+	background-color:transparent;
+}
+
+.navbar-header .contenu_page{
+	margin-left:auto;
+	margin-right:auto;
+	/*width:91%;	/*	modif du 12/06/2015	*/
+	/*background-color:#887E7C;*/
+
+	/* FF3.6+ */
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(136,126,124,1)), color-stop(99%,rgba(163,153,150,0.82)), color-stop(100%,rgba(163,153,150,0.82))); 
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); 
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); 
+	/* IE10+ */
+	background: -ms-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%);
+	/* W3C */ 
+	background: linear-gradient(to bottom, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); 
+}
+
+
+.navbar-header{ 
+	float:none;
+	padding:0% 2% 0% 2%;	/*	Ajout du 17/07/2015	*/
+}
+
+/*	Ajout du 10/06/2015 - modif le 12/06/2015	*/
+.navbar-header .nav{
+	font-size:88%;
+}
+
+/* Uppercase  for first level menu elements */
+.navbar-header .nav>li{
+	text-transform: uppercase;
+	border-bottom:5px solid transparent;
+	padding-left:0;
+	margin-right:2%;	/*	Modif du 21/07/2015	*/
+	margin-left:2%;		/*	Modif du 21/07/2015	*/
+	/*font-size:140%;	/*	Ajout du 15/06/2015	*/
+	/*display:block;	/*	Ajout du 15/06/2015	*/
+	
+}
+
+/* Normal case for second level menu elements */
+/*	Modif du 11/06/2015	*/
+.nav ul>li{
+	text-transform: none;
+	display:block;	/*	Ajout du 11/06/2015	*/
+}
+
+.navbar-header .nav>li:hover{
+	border-bottom:5px solid #CB3B59;
+}
+
+.navbar-header .nav > li > a {
+	color:white;
+	text-shadow:none;
+	padding:15% 0% 15% 0%;	/*	Modif du 21/07/2015	*/
+	display:inline-block;	/*	Ajout du 21/07/2015	*/
+	position:static;	/*	Ajout du 21/07/2015	*/
+	width:110%;
+	font-weight:700;	/*	Ajout du 21/07/2015	*/
+}
+
+.navbar-header .nav > li > a:hover{
+	color:#FFFFFF;	
+	background-color:inherit;	/*	Modif du 21/07/2015	*/
+}
+
+.navbar-header .nav>.active>a,
+.navbar-header .nav>.active>a:hover,
+.navbar-header .nav>.active>a:focus {
+	background-color:transparent;
+	color:#887E7C;
+}
+
+.menu li {
+	margin-top:0.5%;
+	margin-bottom:0.5%;
+}
+
+/* Debut Partie deroulante du menu */
+.navbar-header .nav>li>.dropdown-menu:after,
+.navbar-header .nav>li>.dropdown-menu:before {
+	border:none;
+}
+
+.active-trail,.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover {
+	color:#CB3B59;
+	font-weight: 700;
+}
+
+.navbar-header .dropdown-menu li a:hover{
+	color:#000000;
+}
+.navbar-header .dropdown-menu li a.active-trail:hover{
+	color:inherit;
+}
+
+.navbar-header .nav li.dropdown.open>.dropdown-toggle,
+.navbar-header .nav li.dropdown.active>.dropdown-toggle,
+.navbar-header .nav li.dropdown.open.active>.dropdown-toggle {
+	background-color:inherit;
+	color:white;	/*-> changement du 05/06/2015*/
+}
+
+.navbar-header .nav li.dropdown>.dropdown-toggle .caret {
+	border-top-color:#FFFFFF;
+	border-bottom-color:#FFFFFF;
+}
+
+.navbar-header .nav li.dropdown.open>.dropdown-toggle .caret,
+.navbar-header .nav li.dropdown.active>.dropdown-toggle .caret,
+.navbar-header .nav li.dropdown.open.active>.dropdown-toggle .caret,
+.navbar-header .nav li.dropdown>a:hover .caret,
+.navbar-header .nav li.dropdown>a:focus .caret,
+.caret {
+	border-bottom-color:#FFFFFF;
+	border-top-color:#FFFFFF;
+}
+
+.dropdown-menu .sub-menu {
+	left:100%;
+	position:absolute;
+	top:0;
+	visibility:hidden;
+	margin-top:-1px;
+}
+
+/*	Ajout du 11/06/2015	*/
+/*
+.dropdown-menu>li {
+	display:block;
+}
+*/
+
+.dropdown-menu li:hover .sub-menu {
+	visibility:visible;
+}
+
+.dropdown:hover .dropdown-menu {
+	display:block;
+	margin-top:5%;	/*	Ajout du 21/07/2015	*/
+}
+
+.nav-tabs .dropdown-menu,
+.nav-pills .dropdown-menu,
+.navbar-header .dropdown-menu {
+	margin-top:1%;
+}
+
+.navbar-header .dropdown-menu {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-header .block-menu-block{
+	width:100%;	/*	Modif du 15/06/2015	*/
+	display:inline-block;	/*	Modif du 12/06/2015	*/
+}
+
+
+.dropdown-menu>li>a:hover, 
+.dropdown-menu>li>a:focus, 
+.dropdown-submenu:hover>a, 
+.dropdown-submenu:focus>a,
+.dropdown-menu>.active>a, 
+.dropdown-menu>.active>a:hover, 
+.dropdown-menu>.active>a:focus {
+	background:none;
+	color:#CB3B59;	/*	ajout du 08/06/2015	*/
+}
+
+.navbar-header .menu .dropdown-menu li a:hover:before{
+	content:"\00BB \0020";
+}
+
+/* Fin Partie deroulante du menu	*/
+
+.form-search{
+	/*padding: 5px;	/*	Modif du 22/06/2015	*/
+	/*width:300px;	/*	Modif du 22/06/2015	*/
+	width:100%;	/*	Modif du 30/06/2015	*/
+	/*float:left;	/*	Modif du 30/06/2015	*/
+	display:inline-block;
+}
+
+.search-query{
+	border-radius:14px 0px 0px 14px;
+	/*width:75%;	/*	Modif du 21/07/2015	*/
+	display:inline-block;
+	line-height:250%;	/*	Modif du 17/07/2015	*/
+	text-align:center;
+}
+
+/*	Ajout du 21/07/2015	*/
+.input-append{
+	font-weight:700;
+}
+
+/*	Ajout du 30/06/2015	*/
+.input-append .form-text{
+	width:80%;	/*	Modif du 21/07/2015	*/
+	font-size:100%;	/*	Ajout du 21/07/2015	*/
+	margin:1% 0% 5% 0%;	/*	Ajout du 21/07/2015	*/
+	/*font-weight:700;	/*	Ajout du 21/07/2015	*/
+}
+
+.input-append .btn{
+	border-radius:0px 14px 14px 0px;
+	background-color:#F5F5F5;	/*	Ajout du 17/07/2015	*/
+	font-size:130%;	/*	Ajout du 21/07/2015	*/
+	margin:0;	/*	Ajout du 21/07/2015	*/
+	width:15%;	/*	Ajout du 21/07/2015	*/
+}
+
+/* Fin Menu */
+
+.radius-reset {
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	-o-border-radius:0;
+	border-radius:0;
+	border:0;
+}
+
+.views-field-title{
+	margin-bottom:2%;
+}
+
+.contenu_page {
+	background-color:#FFFFFF;
+	/*width:95%;		/*	Modif du 12/06/2015	*/
+	/*padding-top:1%;	/*	Modif du 21/07/2015	*/
+}
+
+.content{
+	margin:0% 2% 0% 2%;	/*	Ajout du 17/07/2015	*/
+	padding:2% 0% 2% 0%;	/*	Modif du 17/07/2015	*/
+	border-left:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	background-color:#FFFFFF;	/*	Ajout du 17/07/2015	*/
+}
+
+/*	ajout du 11/06/2015	*/
+.container {
+	width:100%;	/*	modif du 12/06/2015	*/
+}
+
+.row{
+	clear:both;
+}
+
+#header {
+	/*margin-right:auto;	/*	Modif du 17/07/2015	*/
+	/*margin-left:auto;	/*	Modif du 17/07/2015	*/
+	/*margin-top:1.3%;	/*	Modif du 17/07/2015	*/
+	/*width:95%;	/*	Modif du 12/06/2015	*/
+	margin:2% 2% 0% 2%;	/*	Ajout du 17/07/2015	*/
+	background-color:white;
+	height:20%;
+	-webkit-border-top-left-radius: 1%;
+	-webkit-border-top-right-radius: 1%;
+	-moz-border-radius-topleft: 1%;
+	-moz-border-radius-topright: 1%;
+	border-top-left-radius: 1%;
+	border-top-right-radius: 1%;
+	border-radius:10px 10px 0px 0px; /*	Ajout du 17/07/2015	*/
+}
+
+#header img{
+	position:relative;
+	top:1.3%;
+	left:2%;
+	max-width :98%;
+}
+
+.text-container a,
+.text-container a:focus{
+	color:#5C5C5C;
+	font-weight:bold;
+	width:100%;	/*	Ajout du 23/06/2015	*/
+}
+
+a{
+	color:#5C5C5C;
+}
+
+/*	Ajout du 19/06/2015	*/
+.views-field-view-node-1{
+	/*display:inline-block;*/
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+}
+
+.bouton{
+	padding:1%;	/*	Modif du 06/07/2015	*/
+	/*background-color:#A6AC1A;	/*	Modif du 22/06/2015	*/
+	color:white;
+	background-color:#887E7C;
+	border:1px solid #887E7C;
+	border-radius:15px;
+}
+.bouton:hover{
+	text-decoration:none;
+	/*background-color:#CDD422;	/*	Modif du 22/06/2015	*/
+	color:white;
+}
+
+.ext{
+	background: url("img/site-ext.gif") no-repeat scroll right bottom transparent;
+	padding-right: 5%;	/*	Modif du 23/06/2015	*/
+	font-style:italic;
+}
+
+.pdf{
+	background: url("img/pdf_icon_32.png") no-repeat scroll right bottom transparent;
+	padding-right:15%;	/*	Modif du 23/06/2015	*/
+}
+
+img.centered {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+/*	Debut Schema	*/
+
+/*	Ajout du 02/07/2015	*/
+.schema{
+	font-size: 13px; 
+	line-height: 20px; 
+	background-color: rgb(255, 255, 255);
+}
+
+/*	Ajout du 02/07/2015	*/
+img.schema{
+	height: 204px; 
+	width: 214px; 
+}
+
+/*	Ajout du 02/07/2015	*/
+img.schema_fleche{
+	height: 64px; 
+	width: 64px; 
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+/*	Fin Schema	*/
+
+ul li {
+	list-style-type:none;
+	/*display : inline-block; /* ajout du 06/06/2014 */
+}
+
+/* ajout du 11/06/2014 */
+/*
+.navbar-header ul li {
+	display : inline-block; 
+}
+*/
+
+h2{
+	margin-top:0;
+	color:black;
+	border-bottom:4px solid #CB3B59;
+	padding:1%;
+	font-family: 'Roboto', Helvetica, Arial,sans-serif ;
+	font-weight:300;
+	font-size:1.5em;
+	letter-spacing: 0;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+h2 a, h2 a:hover{
+	color:inherit;
+}
+
+/*	Ajout du 10/06/2015	*/
+.frontpage{
+	padding:2%;
+}
+
+.frontpage h2{
+	border-bottom:4px solid #CC424E;
+	color:#CC424E;
+}
+
+.directaccess h2{
+	color:white;
+	border-bottom:none;
+	background-color:#887E7C;	/*	Ajout du 30/06/2015	*/
+	border-radius:5px 5px 0px 0px;	/*	Ajout du 30/06/2015	*/
+	margin-bottom:0px;	/*	Ajout du 30/06/2015	*/
+}
+
+.directaccess a{
+	color:white;
+}
+
+.directaccess .nav>li>a:hover{
+	background-color:#887E7C;
+}
+
+h3, 
+.field-name-field-nom-complet {
+	font-size:160%;
+	font-weight: 700;
+	color:#A6AC1A;
+	border-bottom:1px dotted #A6AC1A;
+	margin-bottom:1.3%;
+	text-transform: uppercase;
+	line-height:1.5em;
+}
+
+.views-label{
+	font-weight:bold;
+	margin-right:1em;
+}
+
+#outils_node{
+	text-align:right;
+	margin-bottom:1.3%;
+	float:right;	/*	Ajout du 18/06/2015	*/
+}
+
+#outils_node ul li{
+	display:inline-block;
+}
+
+/*	Modif du 18/06/2015	*/
+#outils_node ul li:before,
+ul.flippy li:before,
+.carousel-indicators li:before{
+	content:"" !important;
+}
+
+.flippy{
+	text-align:center;
+	clear:both;
+}
+.flippy  li {
+	margin-left:0.5%;
+}
+
+.block-presentation{
+	/*width:60%;	/*	Modif du 12/06/2015	*/
+	margin-left:1%;	/*	Modif du 06/07/2015	*/
+}
+
+.block-presentation .node{
+	/*width:60%;	/*	Modif du 11/06/2015	*/
+	text-indent:3%;
+	margin-top:2.6%;
+	/*float:left;*/	/*	Modif du 11/06/2015	*/
+	margin-right:2%;
+}
+
+#img-pres-gbif{
+	/*float:left;	/*	Modif du 11/06/2015	*/
+	margin-top:6%;	/*	Modif du 15/06/2015	*/
+	width:100%;		/*	Ajout du 15/06/2015	*/
+}
+
+/*
+#img-pres-gbif img {
+	width:100%;	
+}
+*/
+
+.field-name-body{
+	padding-left:1%;
+	text-align:justify;
+}
+
+/*	Debut Documents	*/
+
+/*	Ajout du 17/06/2015	*/
+.field-item>p>a>img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#node-118 .field-item>p>a{
+	display:block;
+	text-align:center;
+}
+
+/*	Fin Documents	*/
+
+/*	Modif du 06/07/2015	(documents)	*/
+.field-item{
+	display:inline;
+}
+
+/*	Modif du 06/07/2015	(tags en ligne)	*/
+.single-article .field-item{
+	margin-left:5%;	/*	Ajout du 26/06/2015	*/
+	margin-right:5%;	/*	Ajout du 03/07/2015	*/
+}
+
+
+.node-article .field-name-body {
+	box-shadow:none;
+}
+
+.node-article h2 {
+	font-size:120%;
+	background-color:transparent;
+}
+
+.legend {
+	font-size:100%;
+	font-weight:700;
+}
+
+.equipe_table tr {
+	line-height:6.5%;
+
+}
+
+.equipe_table td {
+	padding-left:1%;
+	padding-right:1%;
+}
+
+/*	Debut Agenda	*/
+
+/*	Ajout du 18/06/2015	*/
+.date-heading {
+	position:relative !important;
+	/*text-align:inherit !important;*/
+}
+
+.date-prev {
+	margin-left:5%;
+	/*margin-right:9%;	/*	Modif du 18/06/2015	*/
+	background:none !important;	/*	Ajout du 18/06/2015	*/
+	position:inherit !important;	/*	Ajout du 18/06/2015	*/
+	/*right:0%;	/*	Ajout du 18/06/2015	*/
+}
+
+.date-next {
+	/*margin-left:5%;	/*	Modif du 18/06/2015	*/
+	margin-right:5%;
+	background:none !important;	/*	Ajout du 18/06/2015	*/
+	position:inherit !important;	/*	Ajout du 18/06/2015	*/
+	/*right:0%;	/*	Ajout du 18/06/2015	*/
+}
+
+/*	Fin Agenda	*/
+
+.text-container ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+/*	Ajout du 18/06/2015	*/
+.text-container .field-name-body .no-puce>li>a {
+	border-radius:10px 10px 10px 10px;	/*	Modif du 26/06/2015	*/
+	text-align:center;
+	width:80%;	/*	Ajout du 26/06/2015	*/
+}
+
+/*	Ajout du 02/07/2015	*/
+.text-container .field-name-body .no-puce>li>a:active {
+	color:#FFFFFF;
+}
+
+.text-container .field-name-body {
+	border-radius:10px;
+	padding-top:0;
+	padding-left:0;
+	padding-right:7%;
+}
+
+.text-container li {
+	padding-left:1em;
+	/*text-indent:-.7em;	/*	Modif du 22/06/2015	*/
+	margin-bottom:1.3%;
+}
+
+/*	Ajout du 22/06/2015	*/
+.text-container .nav-tabs>li{
+	margin-bottom:0%;
+}
+
+.text-container li:before {
+	content:"■  ";
+	color:#CB3B59;
+	margin-right:0.5%;
+}
+
+.text-container .contextual-links li {
+	content:"";
+}
+
+/*	Ajout du 25/06/2015	*/
+.text-container .contextual-links li:before {
+	content:none;
+}
+
+.text-container li+ul li {
+	list-style-type:none;
+	text-indent:0.5%;
+	margin-bottom:0.6%;
+}
+
+.text-container li+ul li:before {
+	content:"* ";
+	color:#CB3B59;
+}
+
+.text-container h2 {
+	padding-bottom:0.5%;
+	padding-left:0;
+}
+
+
+.view-view-news .views-row,
+.view-post-by-dates .views-row,
+.view-lien .views-row,
+.view-documents .views-row,
+.view-view-formation .views-row,
+.view-view-guide .views-row,
+.view-nos-projet .views-row,
+.view-view-reunion  .views-row,
+.view-view-evenement-gbif-fr .views-row
+{
+	margin-top:1.3%;
+	margin-bottom:1.9%;
+	padding:0.5%;
+	border-bottom:1px solid #DDDDDD;
+}
+
+.frontpage .view-view-news .views-row{
+	border-bottom:none;
+}
+.heading ul {
+	margin-left:8%;	/*	Modif du 02/07/2015	*/
+	padding:0;	/*	Modif du 02/07/2015	*/
+}
+
+.view-view-news .field-content {
+	padding-top:0.6%;
+	padding-bottom:0.6%;
+}
+
+.view-view-news .views-field-title {
+	font-size:140%;
+	font-weight: 700;
+	display:block;
+	color:#D6616E;
+}
+
+.views-field-timestamp ,
+.view-post-by-dates .views-field-created,
+.view-lien .views-field-created
+{
+	padding-bottom:0.6%;
+	display:block;
+	font-weight: 700;
+	font-size:110%;
+	color:#999999;
+}
+
+/*	Debut posters	*/
+
+/*	Ajout du 17/06/2015	*/
+.view-content .field-content>img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.file{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+/*	Fin posters	*/
+
+.region-actualites{
+	/*width:68%;	/*	Modif du 12/06/2015	*/
+	margin-left:8%;	/*	Modif du 02/07/2015	*/
+}
+
+.region-actualites .views-field-view-node{
+	font-size:160%;
+	font-weight:bold;
+}
+
+.region-actualites .views-slideshow-cycle-main-frame-row-item {
+	margin-right:0.6%;
+}
+
+.views-slideshow-controls-text-previous,
+.views-slideshow-controls-text-next,
+.views-slideshow-controls-text-pause {
+	padding-right:0.6%;
+}
+
+.region-actualites .views-field-field-image {
+	margin-right:5%;	/*	Modif du 03/07/2015	*/
+	margin-left:5%;	/*	Modif du 03/07/2015	*/
+	float:left;
+}
+
+.region-actualites .field-content p {
+	padding-left:5%;
+	padding-right:5%;	/*	Ajout du 03/07/2015	*/
+	/*width:68%;	/*	Modif du 15/06/2015	*/
+	font-size:120%;	/*	Modif du 18/06/2015	*/
+}
+
+.region-actualites .field-content {
+	text-align:justify;
+	margin-top:1.3%;
+	margin-bottom:1.3%;
+}
+
+.region-actualites .views-field-title {
+	font-weight: 700;
+	font-size:140%;
+}
+
+.region-actualites .views-field-timestamp {
+	font-size:120%;
+	font-weight: 700;
+	color:#CB3B59;
+}
+
+.region-actualites .views-slideshow-controls-bottom {
+	clear:both;
+	/*margin-left:10%;	/*	Modif du 18/06/2015	*/
+	margin-left:auto;	/*	Modif du 18/06/2015	*/
+	margin-right:auto;	/*	Modif du 18/06/2015	*/
+	width:28%;	/*	Modif du 19/06/2015	*/
+}
+
+.region-actualites .views-slideshow-slide-counter {
+	margin-left:1%;
+}
+
+.region-agenda {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.region-agenda tr td {
+	font-size:110%;
+}
+
+.event_title a {
+	font-weight:400;
+	font-size:110%;
+}
+.event_title a:hover {
+	text-decoration:none;
+}
+
+
+.page-actualites ul li,
+.page-actualites ul li:before,
+.links li:before
+{
+	list-style:none;
+	content:none;
+}
+
+.page-actualites .node-article img {
+	float:left;
+	margin-right:1.5%;
+}
+
+.gbifinternational {
+	margin-top:3.9%; 
+	margin-bottom:3.9%;
+}
+
+/*	Ajout du 30/06/2015	*/
+.region-accesdirects{
+	background-color:#887E7C;
+	border-radius:0px 0px 5px 5px;	/*	Ajout du 30/06/2015	*/
+}
+
+.region-accesdirects a:before {
+	content:"» ";
+}
+
+.region-accesdirects ul li{
+	padding-left:0.5%;
+}
+
+.node-article .field-name-field-image {
+	margin-bottom:1.3%;
+}
+
+#contact-site-form label {
+	font-size:120%;
+	font-weight: 700;
+}
+
+#block-system-user-menu ul li:before {
+	content:"";
+}
+
+.centered,
+.region-actualites .more-link,
+.region-agenda p,
+.page-actualites .more-link {
+	text-align:center;
+}
+
+/*	Ajout du 18/06/2015	*/
+.centered a{
+	padding:5px 14px;
+	background-color:#DDDDDD;
+	border:1px solid #DDDDDD;
+	border-radius:15px;
+	display:inline-block;
+	margin:2%
+}
+
+
+.pager li:before,
+.site-map-menu > li:before {
+	content:none;
+}
+
+
+#site-map .content{
+	border:none;
+}
+
+.pager li a {
+	display:inline;
+	/*background-color:transparent;	/*	Modif du 18/06/2015	*/
+	background-color:#DDDDDD;
+}
+
+/*
+.mail{
+	border-bottom:1px dotted black;
+}
+*/
+/*	Modif du 29/06/2015	*/
+.mail span{
+	border-bottom:1px dotted black;
+}
+
+.toplink{
+	position: fixed;
+	bottom: 1.3%;
+	right: 1%;
+	width: 7.8%;
+	height: 10.4%;
+}
+
+/*	Ajout du 22/06/2015	*/
+.feedback_position{
+	position: fixed;
+	top:50%;
+	bottom:25%;
+	left:95%;
+	width:5%;
+	height:15;
+	/*background-color:red;	/*	modif du 23/06/2015	*/
+}
+
+/* Guides*/
+.view-view-guide .views-field-title{
+	font-size:160%;
+	font-weight: 700;
+	padding-left:2%;
+	/*background: url("img/book.png") no-repeat scroll left top transparent;	/*	Modif du 23/06/2015	*/
+	background-position : center;	/* modif du 09/06/2015 */
+}
+
+.view-view-guide .views-field-body{
+	width:53.7%;
+	float:left;
+}
+.view-view-guide .views-field-field-image-guide{
+	float:left;
+	width:16.6%;
+}
+.view-partenaires-fournisseurs .views-row{
+	margin-bottom:1.3%;
+	margin-top:0.6%;
+	padding:0.5%;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.nav-fournisseurs{
+	border:0;
+}
+
+.pagination ul li:before{
+	content:none;	/*	Modif du 25/06/2015	*/
+}
+.pagination {
+	clear:both;
+	margin:2% 0%;	/*	Ajout du 22/10/2015	*/
+	width:100%;	/*	Ajout du 22/10/2015	*/
+}
+
+.text-container .pagination li{
+	text-indent:0;
+	display:inline-block;	/*	Ajout du 25/06/2015	*/
+	padding:2%;	/*	Ajout du 25/06/2015	*/
+	border:1px solid #887E7C;	/*	Ajout du 25/06/2015	*/
+	margin-bottom:0%;	/*	Ajout du 22/07/2015	*/
+}
+
+.view-partenaires-fournisseurs .view-content,
+.view-view-guide .view-content{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.field-name-field-url-ressource{
+	padding-left:2.5%;
+	border:1px solid #DDDDDD;
+	margin-bottom:2.6%;
+	margin-top:2.6%;
+	background: url("img/dl.png") no-repeat scroll left top transparent;
+	padding-top:0.2%;
+	padding-bottom:0.2%;
+	font-weight:bold;
+}
+
+.view-view-guide .view-content{
+	clear:both;
+}
+
+.guide-details,.field-name-field-authors,.field-name-field-publish-date{
+	font-size:120%;
+}
+
+
+li.search-result:before,
+.contextual-links ul li:before{
+	content:"";
+}
+
+li.search-result{
+	margin-top:2.6%;
+	margin-bottom:2.6%;
+	display: inline-block;	/*	modif du 09/06/2015	*/
+}
+
+ol.search-results {
+	list-style: none;
+}
+
+span.views-label-field-tags{
+	background: url("img/tag16.png") no-repeat scroll left bottom transparent;
+	padding-left:8%;	/*	Modif du 25/06/2015	*/
+}
+
+.views-field-field-tags{
+	font-size: 110%;
+}
+
+.article-tags a{
+	color:black;
+}
+
+.view-view-news  .views-field-timestamp,
+.view-post-by-dates .views-field-created,
+.view-lien .views-field-created,
+{
+	background: url("img/calendar16.png") no-repeat scroll left top transparent;
+	padding-left:2%;
+}
+
+li.node-readmore  a{ 
+	display:none;
+}
+
+input:-webkit-input-placeholder,
+input:-moz-placeholder {
+	color: #FFFFFF;
+}
+
+.last-articles .views-row{
+	margin-bottom:0.6%;
+	border-bottom:1px solid #DDDDDD;
+}
+
+.article-post-date{
+	font-size:100%;
+	font-weight:bold;
+	background:url("img/calendar16.png") no-repeat scroll left top transparent;
+	padding-left:8%;	/*	Modif du 18/06/2015	*/
+	color:#999999;
+}
+
+.single-article .field-name-field-image{
+	padding-bottom:1.3%;
+	padding-top:1.3%;
+	border-bottom:5px solid transparent;
+	float:left;	/*	Ajout du 19/06/2015	*/
+}
+
+.single-article .field-name-body {
+	padding-bottom:1.3%;
+}
+
+.single-article {
+	margin-bottom:2.6%;
+}
+.view-post-by-dates .views-field-title a{
+	font-weight:bold;
+}
+
+.view-lien .views-field-title{
+	font-weight:bold;
+	background: url("img/link.png") no-repeat scroll left top transparent;
+	border-bottom: 2px solid #F5F5F5;
+	width:100%;
+	padding-left:5%;  /*	Modif du 23/06/2015	*/
+}
+
+.view-lien .views-field-body{
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+.views-field-field-lien-url{
+	font-style:italic;
+	font-size:110%;
+}
+
+.lock{
+	padding-left:10%;	/*	Modif du 23/06/2015	*/
+	background: url("img/lock-16.png") no-repeat scroll left top transparent;
+}
+
+.no-puce li:before{
+	content:none;
+}
+
+.heading{
+	padding:0;
+	margin:0;
+}
+
+.panel-heading .panel-toggle{
+	background-color:#DDDDDD;
+	color:black;
+}
+
+.cadre,
+.view-view-guide .views-row,  
+.view-lien .views-row,
+.search-result{
+	/*background-color:#FAFAFA;	/*	Modif du 30/06/2015	*/  
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/*width:30%;	/*	Modif du 15/06/2015	*/
+	margin:1%;	/*	Ajout du 15/06/2015	*/
+}
+
+.front-headline1{
+	margin-bottom:2.6%;
+}
+
+ 
+/* FIL ARIANE */
+
+.breadcrumb {
+	font-size:100%;
+	background-color:transparent;
+	margin-bottom:1.3%;
+	padding:0px;
+	/*float:left;	/*	Modif du 16/06/2015	*/
+}
+
+.breadcrumb a {
+	color:#897E78;
+	font-weight:400;
+	margin-right:1%;	/*	Modif du 19/06/2015	*/
+}
+
+.breadcrumb a:hover{
+	text-decoration:none;
+}
+
+/*	Ajout du 19/06/2015	*/
+.breadcrumb li:before{
+	content:"" !important;
+	/*color:#DDDDDD;*/
+	padding:0 0 !important;
+}
+
+.breadcrumb:first-child {
+	padding-left:5%;	/*	Modif du 15/06/2015	*/
+	background-image:url(img/arrow_state_grey_right.png);
+	background-repeat:no-repeat;
+	/*background-position:-1px;	/*	Modif du 15/06/2015	*/
+}
+
+.currentdate{
+	float:right;
+	font-size:100%;
+	padding-right:2.5%;
+	text-align:right;
+	 font-weight: 700;
+	margin-bottom:0;
+}
+
+.region-footer {
+	/*line-height:1%;	/*	Modif du 25/06/2015	*/
+	margin-left:auto;
+	margin-right:auto;
+	font-size:100%;	/*	Ajout du 17/07/2015	*/
+	text-align:center;
+	position:relative;
+	left:0px;
+	bottom:0px;
+	width:96%;
+	color:white;
+	/*float:left;	/*	Ajout du 16/06/2015	*/
+}
+
+.region-footer .contenu_page{
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	/*background-color:#887E7C;*/
+	background: -moz-linear-gradient(top, rgba(136,126,124,1) 0%, rgba(163,153,150,0.82) 99%, rgba(163,153,150,0.82) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(136,126,124,1)), color-stop(99%,rgba(163,153,150,0.82)), color-stop(100%,rgba(163,153,150,0.82))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* W3C */
+	padding-top:5px;
+}
+
+.region-footer ul {
+	margin:0;
+}
+
+.region-footer ul li {
+	display:inline;
+	margin-left:0.5%;
+	margin-right:0.5%;
+}
+.region-footer ul li a {
+	display:inline-block;
+	color:white;
+}
+
+.region-footer .nav {
+	margin:1.5%;	/*	Modif du 23/06/2015	*/
+	margin-bottom:5%
+}
+
+.region-footer .nav li a {
+	padding-left:0.5%;
+}
+
+.region-footer .nav li a:hover {
+	background-color:transparent;
+}
+
+
+.region-footer .nav li+li:before {
+	font-weight: 700;
+}
+
+.region-footer ul.social_icons li {
+	padding-right:0.5%;
+	padding-left:0.5%;
+}
+
+/*	Ajout du 23/06/2015	*/
+.region-footer .contextual-links-region{
+	line-height:100%;
+}
+
+/*	Ajout du 23/06/2015	*/
+.region-footer .contextual-links-region p{
+	/*padding-bottom:10%;	/*	Modif du 23/06/2015	*/
+	line-height:150%;
+	/*margin-bottom:10%;	/*	Modif du 23/06/2015	*/
+}
+
+.region-site-credits {
+	clear:both;
+	font-size:130%;
+	background-color:#666666;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+/* Menu gauche*/
+.region-menu-gauche {
+	font-weight: 700;
+	border-radius:0;
+}
+
+.region-menu-gauche h2{
+	color:#887E7C;
+	margin-bottom:0.6%;
+	padding-left:1%;
+	font-size:1.5em;
+}
+
+.region-menu-gauche a {
+	font-weight:400;
+	/*border-bottom:1px solid #F5F5F5;	/*	Modif du 19/06/2015	*/
+	color:#5C5C5C;
+}
+
+.region-menu-gauche ul li {
+	border-bottom:1px solid #FFFFFF;
+	padding-bottom:0.6%;
+	margin-top:0;
+}
+.region-menu-gauche ul.menu {
+	margin-top:0.6%;
+}
+
+.region-menu-gauche ul.menu>li>a {
+	font-size:100%;
+	color:#887E7C;
+	/*padding:1%;	/*	Modif du 25/06/2015*/
+	font-weight: 700;
+	display:inline-block; /*	Ajout du 05/06/2015	*/
+}
+.region-menu-gauche a:hover{
+	text-decoration:none;
+}
+.region-menu-gauche ul.menu>li>a:hover{
+	background-color:#F5F5F5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color:#000000;
+}
+
+.region-menu-gauche ul.menu>li>a.active-trail {
+	color:#CB3B59;
+}
+
+.region-menu-gauche ul li ul li {
+	border-bottom:1px dotted #FFFFFF;
+	padding-bottom:0;
+}
+
+.region-menu-gauche li+ul {
+	border-bottom:0;
+}
+
+.region-menu-gauche a.active-trail:before {
+	content:" » ";
+}
+
+.region-menu-gauche h2{
+	border:none;
+}
+
+.region-menu-gauche a.active,
+.breadcrumb li:last-child {
+	color:#CB3B59;
+	font-weight: 700;
+}
+
+.region-menu-gauche .block{
+	margin-bottom:2.6%;
+	padding-bottom:5%
+}
+.highlight{
+	background-color:#FAFAFA;
+	padding: 1% 3.4% 1% 1.4%;
+	border: 1px solid #D8D8D8;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+ul.nav-tabs li{
+	font-family: 'Roboto', Helvetica, Arial,sans-serif;
+	font-weight:300; 
+}
+
+ul.nav-tabs li a:hover{
+	color:inherit;
+}
+
+.pagination ul>li>a,
+.pagination>li>span{
+	position: relative;
+	float: left;
+	/*padding: 0.8% 1.2%;	/*	Modif du 25/06/2015	*/
+	line-height: 1.42857143;
+	text-decoration: none;
+	/*border: 1px solid #DDDDDD;	/*	Modif du 25/06/2015	*/
+}
+
+.region-accesdirects .menu{
+	font-weight:bold;
+}
+
+/*	Modif du 30/06/2015	*/
+.directaccess{                   
+	margin-top:4%;	/*	Modif du 06/07/2015	*/
+}
+
+.nav-tabs li a{
+	font-weight:bold;
+}
+
+#kingdom-chart{
+	border:0;
+}
+
+.stat-provider thead{ 
+	color:white;
+	background-color:#887E7C;
+}
+
+.ds-title {
+	color:#A6AC1A;
+}
+
+.small{
+	font-size:110%;
+}
+
+.left-descr{
+	float:left;
+	width:60%;
+}
+
+.left-descr blockquote p{
+	font-size: 100%;
+}
+#publisher-name, #publisher-stats{
+	margin-top:3.9%;
+}
+
+.right-img-pub{
+	float:right;
+	width:24%;
+}
+
+.reset-float
+{
+	clear:both;
+}
+
+.data-number{
+	width:19.5%;
+}
+
+blockquote p{
+	font-size:140%;
+}
+
+#bor-chart{
+	text-align:center;
+}
+
+#bor-chart ul li:before{
+	content:none;  
+}
+
+.carousel{
+	width:58.5%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.contact-details p {
+	/*line-height:2.3%;	/*	Modif du 25/06/2015	*/
+}
+
+#logo-gbif{
+	width:40%;
+}
+
+#logo-mnhn{
+	width:57%;
+}
+
+.view-field-view-node-1{
+	padding:2%;
+}
+
+.menu-gauche{
+	margin-top:10%;
+	margin-bottom:10%;
+	/*border:3px solid #DDDDDD;	/*	Modif du 26/06/2015	*/
+	/*border-radius:5%;	/*	Modif du 26/06/2015	*/
+	padding:3%;
+	/*background-color:#DDDDDD;	/*	Modif du 22/06/2015	*/
+}
+
+.breadcrumb>li {
+	display:block;
+	margin-left:1%;
+}
+
+/*	Debut	Lignes de bootstrap-combined.min.css	*/
+[class^="icon-"],
+[class*=" icon-"]{
+	display:inline-block;
+	width:14px;
+	height:14px;
+	*margin-right:.3em;
+	line-height:14px;
+	vertical-align:text-top;
+	background-image:url("../img/glyphicons-halflings.png");
+	background-position:14px 14px;
+	background-repeat:no-repeat;
+	margin-top:1px;
+}
+
+.icon-calendar{
+	background-position:-192px -120px;
+}
+
+.icon-search{
+	background-position:-48px 0;
+}
+
+/*	Fin	Lignes de bootstrap-combined.min.css	*/
+
+/*	Ajout du 23/06/2015	*/
+.glyphicon{
+	line-height:4;
+}
+
+/*	Ajout du 23/06/2015	*/
+.adresse-footer{
+	/*display:block;	/*	modif du 25/06/2015	*/
+}
+
+/*	Ajout du 25/06/2015	*/
+.form-text{
+	width:100%;
+	font-size:100%;
+}
+
+/*	Ajout du 25/06/2015	*/
+table,
+tbody,
+tr,
+th,
+td{
+	/*width:100%;	/*	Modif du 25/06/2015	*/
+}
+
+/*	Ajout du 30/06/2015	*/
+.table>tbody>tr>td{
+	border-top:0px;	
+	border-bottom:1px solid #887E7C;
+}
+
+/*	Ajout du 26/06/2015	*/
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover{
+	color:#000000;
+	background-color:#887E7C;
+}
+
+/*	Debut Presentation equipe	*/
+
+/*	Ajout du 26/06/2015	*/
+.personne{
+	margin-top:5%;
+	border-bottom:1px solid black;
+}
+
+/*	Ajout du 26/06/2015	*/
+.img-circle{
+	display:inline-block;
+}
+
+/*	Ajout du 26/06/2015	*/
+.cv{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+/*	Ajout du 26/06/2015	*/
+.cv .nom,
+.cv .fonction,
+.cv .mail{
+	display:inline-block;
+	width:80%;
+}
+
+/*	Ajout du 26/06/2015	*/
+.cv .nom{
+	margin-left:14%;
+}
+
+/*	Ajout du 26/06/2015	*/
+.cv .fonction{
+	margin-left:15%;
+}
+
+/*	Ajout du 26/06/2015	*/
+.cv .mail{
+	margin-left:16%;
+}
+
+/*	Fin Presentation equipe	*/
+
+/*	Debut Representation GBIF international	*/
+
+/*	Ajout du 29/06/2015	*/
+.presentation li{
+	margin-left:5%;
+	display:inline-block;
+	width:50%;
+}
+
+/*	Ajout du 29/06/2015	*/
+.presentation .titre,
+.presentation .nom,
+.presentation .mail{
+	display:inline-block;
+	width:80%;
+}
+
+/*	Ajout du 29/06/2015	*/
+.presentation .titre{
+	margin:5% 0% 7% 0%;
+	font-weight:bold;
+}
+
+/*	Ajout du 29/06/2015	*/
+.presentation .mail{
+	margin: 2% 0% 7% 20%;
+}
+
+/*	Ajout du 29/06/2015	*/
+.presentation .mail p{
+	width:20%;
+}
+
+/*----------	Fin Representation GBIF international	------------*/
+
+/*----------	Debut Newletter	------------*/
+
+/*	Ajout du 07/07/2015	*/
+#block-simplenews-73{ 
+	border-top:3px solid #FFFFFF;
+	padding-top:2%;
+}
+
+/*----------	Fin Newletter	------------*/
+
+/*----------	Debut Feedback	------------*/
+/*----------	inspire par https://www.drupal.org/node/693880	------------*/
+
+/*	Ajout du 06/07/2015	*/
+#block-feedback-form {
+	top:250px; 
+	right:40px; 
+	left:inherit;
+	bottom:inherit;
+	height:auto;
+}
+
+/*	Ajout du 06/07/2015	*/
+#block-feedback-form.block .inner {
+	margin:0px; 
+	padding:0px;
+}
+
+/*	Ajout du 06/07/2015	*/
+#block-feedback-form .feedback-link {
+    color:white;
+    background:#CB3B59;
+    border:0px solid #CB3B59;
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    white-space:nowrap;
+    display:block;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    font-size:50%;
+    font-weight:normal;
+    text-shadow: 0px 0px 1px #333;
+    padding-right:2%;
+    position:fixed;
+    bottom:inherit;
+    right:-50%;
+}
+
+/*	Ajout du 06/07/2015	*/
+#block-feedback-form form { 
+	padding:1%; 
+	max-width:none;
+}
+
+/*----------	Fin Feedback	------------*/
+
+/*----------	Debut Responsive Menus	------------*/
+
+/*	Ajout du 17/07/2015	*/
+.mean-container .mean-nav ul li a.mean-expand{
+	width:10%;
+}
+
+/*	Ajout du 21/07/2015	*/
+.mean-container .mean-bar{
+	width:96%;
+	margin:0% 2% 0% 2%;
+}
+
+/*	Ajout du 17/07/2015	*/
+.mean-container .mean-bar,
+.mean-container .mean-nav{
+	background: -moz-linear-gradient(top, rgba(136,126,124,1) 0%, rgba(163,153,150,0.82) 99%, rgba(163,153,150,0.82) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(136,126,124,1)), color-stop(99%,rgba(163,153,150,0.82)), color-stop(100%,rgba(163,153,150,0.82))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* W3C */
+}
+
+/*	Ajout du 17/07/2015	*/
+.mean-container .mean-bar a{
+	/*width:100%;	/*	Modif du 17/07/2015	*/
+}
+
+/*	Ajout du 17/07/2015	*/
+.mean-container .mean-bar a p{
+	width:90%;
+}
+
+/*	Ajout du 17/07/2015	*/
+.mean-container a.meanmenu-reveal{
+	width:100%;
+	text-indent:0%;
+	text-align:center;
+	font-size:115%;
+}
+
+/*----------	Fin Responsive Menus	------------*/
+
+/*	Ajout du 22/07/2015	*/
+/*----------	Debut Newsletter Simplenews	------------*/
+
+#simplenews-admin-filter .form-item {
+  clear: both;
+  line-height: 4em;
+  margin: 0pt 2em 0pt 0pt;
+}
+
+#simplenews-admin-filter .form-item label {
+  float: right;
+  width: 12em;
+}
+
+#simplenews-admin-filter .spacer {
+  margin-left: 12em;
+}
+
+#simplenews-admin-filter .form-select,
+#simplenews-admin-filter .form-text {
+  width: 14em;
+}
+
+.block-simplenews .issues-link,
+.block-simplenews .issues-list {
+  margin-top: 10em;
+}
+
+.block-simplenews .issues-list .newsletter-created {
+  display: none;
+}
+
+.newsletter-header{
+	background-color:blue;
+	text-align:center;
+	margin:5% 2% 5% 0%
+}
+
+.newsletter-corps{
+	background-color:red;
+	margin:5% 0% 5% 0%;
+}
+
+.newsletter-footer{
+	background-color:green;
+	margin:5% 0% 5% 2%;
+}
+
+/*----------	Fin Newletter Simplenews	------------*/
+
+/*	Ajout du 18/06/2015	*/
+
+@media screen and (min-width:768px){
+
+	/*------------------*/
+	/*	Debut Header	*/
+	/*------------------*/
+
+	.navbar-header .nav>li{
+		display : inline-block;
+		font-size:100%;
+	}
+
+	.navbar-header .block-menu-block{
+		/*margin-top:0.5%;	/*	Modif du 21/07/2015	*/
+		/*margin-left:7%;	/*	Modif du 21/07/2015	*/
+	}
+
+	/*	Ajout du 17/07/2015	*/
+	.menu_navigation{
+		width:70%;
+		display:inline-block;	
+		padding-right:0;
+	}
+
+	/*	Ajout du 17/07/2015	*/
+	.menu_search{
+		width:29%;	
+		display:inline-block;
+	}
+
+	/*	Ajout du 23/06/2015	*/
+	.form-search{
+		/*width:29%;	/*	Modif du 17/07/2015	*/
+		/*float:right;	/*	Modif du 17/07/2015	*/
+		display:inline-block;
+	}
+
+	/*	Ajout du 21/07/2015	*/
+	.input-append .btn{
+		font-size:100%;
+	}
+
+	/*	Ajout du 23/06/2015	*/
+	.search-query{
+		border-radius:14px 0px 0px 14px;
+		width:75%;
+		display:inline-block;
+		line-height:215%;
+		text-align:center;
+	}
+
+	.breadcrumb:first-child {
+		padding-left:1.5%;
+	}
+
+	.breadcrumb>li {
+		display:inline;
+	}
+
+	.menu-gauche{
+		margin-top:10%;
+		margin-bottom:10%;
+		border:none;
+	}
+
+	/*--------------*/
+	/*	Fin Header	*/
+	/*--------------*/
+
+	/*------------------*/
+	/*	Debut Agenda	*/
+	/*------------------*/
+
+	/*	Ajout du 18/06/2015	*/
+	.date-heading {
+		position:relative !important;
+		text-align:inherit !important;
+	}
+
+	.date-prev {
+		margin-left:5%;
+		margin-right:10%;
+		background:none !important;
+		position:absolute !important;
+	}
+
+	.date-next {
+		margin-right:5%;
+		background:none !important;
+		position:absolute !important;
+	}
+
+	/*--------------*/
+	/*	Fin Agenda	*/
+	/*--------------*/
+
+	/*----------------------------------------------*/
+	/*	Debut bloc actualites de la page d'accueil	*/
+	/*----------------------------------------------*/
+
+	.region-actualites{
+		margin-left:6%;
+	}
+
+	/*	Ajout du 19/06/2015	*/
+	.region-actualites .views-slideshow-controls-bottom {
+		width:7%;	/*	Modif du 19/06/2015	*/
+	}
+
+	/*	Ajout du 19/06/2015	*/
+	.views-field-view-node-1{
+		width:15%;
+	}
+
+	/*----------------------------------------------*/
+	/*	Fin bloc actualites de la page d'accueil	*/
+	/*----------------------------------------------*/
+
+	/*	Ajout du 23/06/2015	*/
+	.ext{
+		padding-right: 3%;
+	}
+
+	/*	Ajout du 23/06/2015	*/
+	.region-footer .nav {
+		margin:0.5%;
+	}
+
+	/*	Ajout du 23/06/2015	*/
+	.adresse-footer{
+		display:inline-block;
+	}
+
+	/*	Ajout du 23/06/2015	*/
+	.lock{
+		padding-left:5%;	
+	}
+
+	/*	Ajout du 23/06/2015	*/
+	.feedback_position{
+		left:98%;
+		width:2%;
+		height:10%;
+	}
+
+	/*	Ajout du 25/06/2015	*/
+	.article-post-date{
+		padding-left:3%;	
+	}
+
+	/*	Ajout du 25/06/2015	*/
+	span.views-label-field-tags{
+		padding-left:4%;
+	}
+
+	/*------------------*/
+	/*	Debut onglets	*/
+	/*------------------*/
+
+	/*	Ajout du 26/06/2015	*/
+	.nav-pills>li{
+		display:inline-block;
+	}
+
+	/*	Ajout du 26/06/2015	*/
+	.text-container .field-name-body .no-puce>li>a{
+		width:100%;
+	}
+
+	/*--------------*/
+	/*	Fin onglets	*/
+	/*--------------*/
+
+	/*------------------------------*/
+	/*	Debut Presentation equipe	*/
+	/*------------------------------*/
+
+	/*	Ajout du 26/06/2015	*/
+	.personne{
+		margin-top:5%;
+		border-bottom:none;
+	}
+
+	/*	Ajout du 26/06/2015	*/
+	.img-circle{
+		display:inline-block;
+	}
+
+	/*	Ajout du 26/06/2015	*/
+	.cv{
+		display:inline-block;
+		vertical-align:middle;
+		width:68%
+	}
+
+	/*	Ajout du 26/06/2015	*/
+	.cv .nom,
+	.cv .fonction,
+	.cv .mail{
+		display:inline-block;
+		width:80%;
+	}
+
+	/*	Ajout du 26/06/2015	*/
+	.cv .nom{
+		margin-left:14%;
+	}
+
+	/*	Ajout du 26/06/2015	*/
+	.cv .fonction{
+		margin-left:15%;
+	}
+
+	/*	Ajout du 26/06/2015	*/
+	.cv .mail{
+		margin-left:16%;
+	}
+
+	/*--------------------------*/
+	/*	Fin Presentation equipe	*/
+	/*--------------------------*/
+
+	/*------------------------------------------*/
+	/*	Debut Representation GBIF international	*/
+	/*------------------------------------------*/
+
+	/*	Ajout du 29/06/2015	*/
+	.presentation .titre{
+		margin:2% 0% 2% 0%;
+	}
+
+	/*	Ajout du 29/06/2015	*/
+	.presentation .nom{
+		margin: 2% 0% 1% 0%;
+	}
+
+	/*	Ajout du 29/06/2015	*/
+	.presentation .mail{
+		margin: 0% 0% 2% 5.5%;
+	}
+
+	/*	Ajout du 29/06/2015	*/
+	.presentation li:before{
+		width:5%;
+		display:inline-block;
+	}
+
+	/*------------------------------------------*/
+	/*	Fin Representation GBIF international	*/ 
+	/*------------------------------------------*/
+
+	/*------------------------------*/
+	/*	Debut Documents & Posters	*/ 
+	/*------------------------------*/
+
+	/*	Ajout du 03/07/2015	*/
+	.view-documents .views-row,
+	.documents{
+		width:48%;
+		display:inline-block;
+	}
+
+	/*	Ajout du 03/07/2015	*/
+	.view-documents .field-content{
+		display:inline-block;
+	}
+
+	/*--------------------------*/
+	/*	Fin Documents & Posters	*/ 
+	/*--------------------------*/
+
+	/*	Modif du 30/06/2015	*/
+	.pdf{
+		padding-right:5%;	
+	}
+
+	/*	Ajout du 03/07/2015	*/
+	.heading ul {
+		margin-left:4%;
+	}
+
+	/*	Ajout du 03/07/2015	*/
+	.single-article a{
+		width:30%;	
+	}
+
+	/*----------	Debut Feedback	------------*/
+
+	/*	Ajout du 06/07/2015	*/
+	#block-feedback-form .feedback-link {
+		padding-left:1%;	/*	Ajout du 07/07/2015	*/
+		padding-right:1%;
+		right:-2.7%;	/*	Modif du 07/07/2015	*/
+	}
+
+	/*----------	Fin Feedback	------------*/
+}
+
+/*      Ajout du 22/07/2015     */
+@media screen and (min-width:768px) and (max-width:992px){
+        .region-actualites .views-slideshow-controls-bottom{
+                width:10%;
+        }
+
+        .menu-search{
+		width:100%;
+	}
+
+	.input-append{
+		witdh:80%;
+	}	
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<html xml:lang="fr" lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <?php print $head; ?>
+  <title><?php print $head_title; ?></title>
+
+  <?php 
+	print $scripts;
+	$path = current_path();
+	$path_alias = drupal_lookup_path('alias',$path);
+	
+	if (substr($path_alias, 0,11)=="partenaires")
+	{
+		echo '<script src="https://code.highcharts.com/highcharts.js"></script>';
+		echo '<script src="https://code.highcharts.com/modules/exporting.js"></script>';
+	
+	}
+ 
+   ?>
+  
+  <link rel="stylesheet" href="<?php print base_path().path_to_theme();?>/css/bootstrap-combined.min.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php print base_path().path_to_theme();?>/css/print.css" type="text/css" media="print" />
+
+  <?php print $styles; ?>
+   <link rel="stylesheet" href="<?php print base_path();?>sites/all/themes/bootstrap/css/overrides.css" type="text/css" media="screen" />
+   <!--[if gte IE 7]>
+     <link type="text/css" rel="stylesheet" href="<?php print base_path().path_to_theme();?>/css/style-ie.css" />
+   <![endif]-->
+
+
+  <!-- Fonts-->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+  <?php print $page_top; ?>
+    
+  <div id="header" class="row-fluid">
+      <a href="<?php  echo base_path(); ?>"><img src="<?php print base_path() . path_to_theme(); ?>/img/header_gbif_site.png"  alt="GBIF FRANCE"></a>
+  </div>
+  <!--  navigation -->
+	  <div class="navbar navbar-static">
+	    <div class="navbar-inner">
+	    <div class="container">
+	    <?php 
+	    echo render($navigation);
+	    $block = module_invoke('search', 'block_view', 'search');
+	    print render($block); ?>
+	    </div>
+	    </div>
+      </div>
+    <!-- fin navigation -->
+  <div class="container">
+    <!-- contenu de la page -->
+    <div class="content">
+	<?php print $page; ?>
+    </div>
+    <!-- fin contenu -->
+</div>
+   
+<div id="footer">
+  <div class="region region-footer">
+	<div class="container">
+	  <?php print render($footer); ?>
+	</div>
+  </div>
+</div>
+<!-- fin container -->
+  
+<div class="back-to-top"><a href="<?php echo $_SERVER['REQUEST_URI']; ?>#top"><img src="<?php print base_path() . path_to_theme(); ?>/img/fleche_top.png"" alt="Revenir en haut" class="toplink"></div>
+<?php print $page_bottom; ?>
+
+</body>
+</html>

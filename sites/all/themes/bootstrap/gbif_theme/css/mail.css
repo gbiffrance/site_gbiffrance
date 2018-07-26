@@ -1,0 +1,469 @@
+#mimemail-body{
+	/*background-color:#F2F2F2;*/
+}
+
+#newsletter-header,
+.newsletter-corps,
+.newsletter-footer{
+	background-color:#FFFFFF;
+	color:#000000;
+	width:96%;
+}
+
+.newsletter-corps{
+        margin:1%;
+}
+
+/*--------------        Debut Footer    --------------*/
+
+.newsletter-footer {
+        margin-left:auto;
+        margin-right:auto;
+        font-size:100%;
+        text-align:center;
+        position:relative;
+        left:0px;
+        bottom:0px;
+        width:96%;
+        color:white;
+        /*
+	-webkit-border-bottom-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: -moz-linear-gradient(top, rgba(136,126,124,1) 0%, rgba(163,153,150,0.82) 99%, rgba(163,153,150,0.82) 100%); /* FF3.6+ */
+        /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(136,126,124,1)), color-stop(99%,rgba(163,153,150,0.82)), color-stop(100%,rgba(163,153,150,0.82))); /* Chrome,Safari4+ */
+        /*background: -webkit-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* Chrome10+,Safari5.1+ */
+        /*background: -o-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* Opera 11.10+ */
+        /*background: -ms-linear-gradient(top, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* IE10+ */
+        /*background: linear-gradient(to bottom, rgba(136,126,124,1) 0%,rgba(163,153,150,0.82) 99%,rgba(163,153,150,0.82) 100%); /* W3C */
+        /*padding-top:5px;*/
+}
+
+/*--------------        Fin Footer      --------------*/
+
+
+#simplenews-admin-filter .form-item { 
+	clear: both;
+	line-height: 4em;
+	margin: 0pt 2em 0pt 0pt;
+}
+
+#simplenews-admin-filter .form-item label { 
+	/*float: right;*/
+	width: 12em; 
+}
+
+#simplenews-admin-filter .spacer {
+	margin-left: 12em;  
+}
+
+#simplenews-admin-filter .form-select, 
+#simplenews-admin-filter .form-text {
+	width: 14em;
+}
+
+.block-simplenews .issues-link,
+.block-simplenews .issues-list {
+	margin-top: 10em;
+}
+
+/*	Banniere changeante selon la resolution de l'ecran	*/
+.banniere{
+        width:100%;
+        margin:1% 0% 0% 0%;
+}
+
+/*	Debut : informations a masquer	*/
+.column-side,
+.form-type-item{
+	display:none;
+}
+
+.field-name-field-tags{
+        display:none;
+}
+
+.block-simplenews .issues-list .newsletter-created {
+        display: none;
+}
+
+/*	Fin : informations a masquer	*/
+
+div.node-article {
+/*	min-height:300px;*/
+}
+
+.node-article .field-name-field-image {
+	margin-top: 2%;
+	/*float:left;	/*AJOUT*/
+	width:100%;	/*AJOUT*/
+}
+
+.field-name-field-image{
+	/*float:left;/*MAJ*/
+	/*width:100%; /*AJOUT*/
+	margin-right:5%;
+	padding-bottom: 1.3%;
+        padding-top: 1.3%;
+        border-bottom: 5px solid transparent;
+}
+
+/*	Corps de texte des news	*/
+.field-type-text-with-summary{
+	/*float:left;	/*MAJ*/
+	/*width:100%;	/*AJOUT*/
+}
+
+.field .field-label {
+	font-weight: bold;
+}
+
+.field-item {
+	display: inline;
+}
+
+/*	Titres	*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 10px 0;
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 24px;
+	color: inherit;
+	text-rendering: optimizelegibility;
+	vertical-align:middle;
+	font-size:18px;
+	margin-top:35px;
+}
+
+h1{
+        margin-top:2%;
+        border-bottom: 2px solid #CB3B59;
+        padding: 1%;
+        font-family: 'Roboto', Helvetica, Arial,sans-serif;
+        font-weight: 300;
+        font-size: 1.5em;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        float:none;
+}
+
+h2{
+	/*margin-top:3.5%;*/
+	color: #A6AC1A;
+	/*border-bottom: 2px solid #CB3B59;*/
+	padding: 1%;
+	font-family: 'Roboto', Helvetica, Arial,sans-serif;
+	/*font-weight: 300;*/
+	/*font-size: 1.5em;*/
+	letter-spacing: 0;
+	line-height:1.0em;
+	text-transform: uppercase;
+	float:none;
+	font-size:14px;
+}
+
+h2.titre_newsletter{
+	border-bottom: 2px solid #CB3B59;
+	margin-top:20px;
+	padding-bottom:0.5%;
+	/*float:left;	/*AJOUT*/
+	width:100%;	/*AJOUT*/
+	line-height:1.1em;
+	font-size:16px;
+	color:#000000;
+	/*text-transform:uppercase;*/
+}
+
+h3, .field-name-field-nom-complet {
+	font-size: 115%;
+	font-weight: 700;
+	color: #A6AC1A;
+	border-bottom: 1px dotted #A6AC1A;
+	margin-bottom: 1.3%;
+	text-transform: uppercase;
+	/*line-height: 1.5em;*/
+}
+
+h2 a{
+	color: #A6AC1A;
+}
+
+p{
+        line-height:15px;
+	text-align:justify;
+}
+
+/*	Puces de liste	*/
+ul li {
+	list-style-type: none;
+}
+
+.text-container ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.text-container li {
+	padding-left: 1em;
+	margin-bottom: 1.3%;
+}
+
+.text-container li:before {
+	content: "■ ";
+	color: #CB3B59;
+	margin-right: 0.5%;
+}
+
+.text-container li::before {
+        content: "■ ";
+        color: rgb(203, 59, 89);
+        margin-right: 0.5%;
+}
+
+.column-wrapper div a {
+        font-size: 100%;
+}
+
+/*	Titres des news	*/
+div.column-wrapper>div>h2{
+	color:#A6AC1A;
+}
+
+a.lien_exterieur{
+	color:#5C5C5C;
+	background: url(http://www.gbif.fr/sites/all/themes/bootstrap/gbif_theme/css/img/site-ext.gif) no-repeat scroll right bottom transparent;
+	padding-right:2%;	
+	/*border:none;*/
+}
+
+/*      liens sous forme de bouton      */
+.bouton{
+        margin:2% 38%;
+        padding:1%;
+        color:#887E7C;
+        background-color:#FFFFFF;
+        border:2px solid #887E7C;
+        border-radius:15px;
+        display:inline-block;
+        text-indent:initial;
+        /*width:40%;*/
+}
+
+/*	Liens vers le contenu integral de l'actualite	*/
+.lien_site{
+        float:none;
+        clear:both;
+        /*margin-left:auto;*/
+        /*margin-right:auto;*/
+	display:inline-block;
+	margin:2% 38%;
+}
+
+
+hr{
+	/*height:3px;*/
+	border-top:3px solid #CC424E;
+	margin-top:20px;
+	float:none;
+	clear:both;
+	/*color:#A6AC1A;*/
+	/*background-color:#A6AC1A;*/
+	display:none;
+}
+
+/*	Tags, mots-cles	*/
+/*
+.field-name-field-tags>.field-items {
+	width: 80%;
+}
+
+.field-label-inline .field-label, 
+.field-label-inline .field-items {
+	float: left;
+}
+
+.field-name-field-tags>.field-label {
+	width: 20%;
+}
+
+.field-label-inline .field-label, 
+.field-label-inline .field-items {
+	float: left;
+}
+*/
+
+/*-------       Debut Logo institution  ------------*/
+
+.newsletter-footer{
+        /*padding-top:3%;*/
+}
+
+.newsletter-footer img{
+        margin-left:3%;
+        margin-right:2%;
+	width:150px;
+}
+
+#newsletter-logo-afb,
+#newsletter-logo-gbif,
+#newsletter-logo-ird,
+#newsletter-logo-mnhn,
+#newsletter-logo-ums,
+#newsletter-logo-upmc{
+	display:block; /*
+        margin-left:auto;  
+        margin-right:auto;
+	*/
+	/*display:inline;*/
+	margin-top:3%;
+	margin-left:2%;
+	margin-right:2%;
+	width:15%;
+}
+
+#newsletter-logo-ums{
+	margin-bottom:2.5%;
+}
+
+/*-------       Debut Logo institution  ------------*/
+
+.lien_centree{
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 98%;
+}
+
+
+/*	Style pour tablette	*/
+@media screen and (min-width:768px){
+	/*      Image des news  */
+        .field-name-field-image{
+                /*float:left;*/
+                /*width:20% !important;*/
+        	margin-right:2%;
+	}
+
+        /*      Corps de texte des news */
+        .field-type-text-with-summary{
+                /*float:right;*/
+                width:100%;
+		margin-top:2%;
+        }
+
+        h2.titre_newsletter{
+                clear:both;
+        }
+
+	#newsletter h2, #newsletter h3, #newsletter hr {
+	    margin-top:3%;
+	}
+
+	.newsletter-footer{
+		margin-left:auto;
+		margin-right:auto;
+		display:block;
+		width:98%;
+	}
+	
+
+        #newsletter-logo-afb,
+        #newsletter-logo-gbif,
+        #newsletter-logo-ird,
+        #newsletter-logo-mnhn,
+        #newsletter-logo-ums,
+	#newsletter-logo-upmc{
+                width:150px;
+		margin-left:2%;
+		margin-right:2%;
+                display:inline-block;
+        }
+
+}
+
+/*      Style pour les ordinateur avec des ecrans standart ou plus      */
+@media screen and (min-width:992px){
+	/*	Image des news	*/
+	.field-name-field-image{
+        	float:left;
+     		width:20% !important;
+	}
+
+	/*      Corps de texte des news */
+	.field-type-text-with-summary{
+		/*float:right;*/
+		/*width:75%;*/
+		margin-top:2%;
+	}
+
+	/*.field-type-text-with-summary, */
+	.field-name-field-image{
+	        margin: 2%;
+		margin-top:0%;
+		/*padding-top:2%;*/
+	}
+	
+	h2.titre_newsletter{
+		clear:both;
+		margin-top:2%;
+	}
+
+	hr{
+	        margin-top:2%;
+	}
+
+	.img_connexion img{
+		display:inline-block;
+		margin-right:2%;
+	}
+
+        #newsletter-logo-afb,
+        #newsletter-logo-gbif,
+        #newsletter-logo-ird,
+        #newsletter-logo-mnhn,
+        #newsletter-logo-upmc{
+                width:150px;
+                margin-left:3%;
+                margin-right:3%;
+        }
+
+}
+
+/*      Style pour les ordinateur avec de gros ecrans   */
+@media screen and (min-width:1200px){
+	
+}
+
+/*      Style pour les ordinateur avec de gros ecrans   */
+@media screen and (min-width:1300px){
+
+        /*----------    Debut Footer    ------------*/
+/*
+        #footer{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1170px;
+	}
+*/
+
+        .region-footer{
+                width:100%;
+        }
+
+        /*----------    Fin Footer      ------------*/        
+}
+
+/*      Cas specials de resolution d'ecran      */
+@media screen and (min-width:894px){
+	
+}

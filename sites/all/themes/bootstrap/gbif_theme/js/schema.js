@@ -1,0 +1,11 @@
+(function ($) {
+  
+	$(document).ready(function (){	
+
+		if(screen.width<750){
+
+			$('#connecter_donnees_GBIF').html('<p><img alt="" src="/site-gbif/sites/default/files/images/md-image.png" style="font-size: 13px; line-height: 20px; height: 204px; width: 214px; background-color: rgb(255, 255, 255);" /><a href="metadonnees" style="font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255);">Métadonnées</a></p><p><img alt="" src="/site-gbif/sites/default/files/images/arrow216.png" style="font-size: 13px; line-height: 20px; height: 64px; width: 64px; background-color: rgb(255, 255, 255);" /></p><p><img alt="" src="/site-gbif/sites/default/files/images/primary_data.png" style="font-size: 13px; line-height: 20px; height: 170px; width: 151px; background-color: rgb(255, 255, 255);" /><a href="donnees-primaires" style="font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255);">Données primaires</a><span style="font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255);">&nbsp;/&nbsp;</span><a href="numerisation-des-donnees" style="font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255);">Numérisation</a></p><p><img alt="" src="/site-gbif/sites/default/files/images/arrow216.png" style="font-size: 13px; line-height: 20px; height: 64px; width: 64px; background-color: rgb(255, 255, 255);" /></p><p><img alt="" src="/site-gbif/sites/default/files/images/Database-64.png" style="font-size: 13px; line-height: 20px; height: 64px; width: 64px; background-color: rgb(255, 255, 255);" /><a href="publication-des-donnees" style="font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255);">Publication (IPT)</a></p><p><img alt="" src="/site-gbif/sites/default/files/images/arrow216.png" style="font-size: 13px; line-height: 20px; height: 64px; width: 64px; background-color: rgb(255, 255, 255);" /></p><p><img alt="" src="/site-gbif/sites/default/files/images/dataportal.png" style="font-size: 13px; line-height: 20px; height: 118px; width: 144px; background-color: rgb(255, 255, 255);" /><a class="ext" href="http://www.gbif.org" style="font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255);" target="_blank">Consultation sur le portail international</a></p>');
+		}
+	});
+
+})(jQuery);

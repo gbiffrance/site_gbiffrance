@@ -1,0 +1,24 @@
+<!-- Debut Page Contact -->
+<div class="currentdate">
+	<?php print render($page['currentdate']); ?>
+</div>
+<div class="block-breadcrumb">
+	<?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+</div>
+    
+<!--<div class="row">	<!-- modif du 11/06/2015 -->
+	<div class="col-md-9">	<!-- modif du 09/06/2015 -->
+		<div class="bloc">
+			<h2 class="block-title">Contacter le GBIF France</h2>
+			<p><i class="icon-question-sign"></i>&nbsp;Pour toutes questions, commentaires, écrivez nous...</p>
+			<?php print render($page['content']); ?>
+		</div>
+	</div>	<!-- modif du 10/06/2015 -->
+
+	<div class="col-md-3">	<!-- modif du 10/06/2015 -->
+		<div class="bloc">
+			<?php print render($page['right-content']); ?>
+		</div>
+	</div>	<!-- modif du 10/06/2015 -->
+<!--</div>	<!-- modif du 11/06/2015 -->
+<!-- Fin Page Contact -->

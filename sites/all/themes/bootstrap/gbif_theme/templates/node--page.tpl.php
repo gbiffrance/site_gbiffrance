@@ -1,0 +1,59 @@
+<div id="node-<?php print $node->nid; ?>" class="bloc <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+
+<?php
+	if(!drupal_is_front_page()){
+		$path = base_path() . path_to_theme();
+
+		print'	
+		<div id="outils_node">
+			<ul class="liste_outils">';
+
+		print'
+				<li class="imprimer">
+					<a href="#" title="Imprimer cette rubrique" id="printBtn"><img src="'.$path.'/img/outil_imprimer.jpg" alt="Imprimer cette rubrique"></a>
+				</li>
+				<li class="augmenter_taille_police">
+					<a href="#" id="incFontSize"><img alt="Agrandir la taille du texte" src="'.$path.'/img/outil_agrandir.jpg"></a>
+				</li>
+				<li class="diminuer_taille_police">
+					<a href="#" id="decFontSize"><img alt="Réduire la taille du texte" src="'.$path.'/img/outil_reduire.jpg"></a>
+				</li>
+			</ul>
+		</div>';
+	} 
+?>
+
+	<div>
+	<?php print render($title_prefix); ?>
+	<?php if (!$page && $title): ?>
+		<h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+	<?php endif; ?>
+	<?php print render($title_suffix); ?>
+
+	<?php if ($display_submitted): ?>
+		<span class="submitted">
+			<?php print $user_picture; ?>
+			<?php print $submitted; ?>
+		</span>
+	<?php endif; ?>
+	</div>
+
+	<?php
+		// Hide comments, tags, and links now so that we can render them later.
+		hide($content['comments']);
+		hide($content['links']);
+		hide($content['field_tags']);
+		print render($content);
+		// print format_date($node->created, 'article'); 
+	?>
+
+	<?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
+		<div>
+			<?php print render($content['field_tags']); ?>
+			<?php print render($content['links']); ?>
+		</div>
+	<?php endif; ?>
+
+	<?php print render($content['comments']); ?>
+
+</div> <!-- /.node -->
